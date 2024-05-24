@@ -9,7 +9,7 @@ This is a simple web application to manage a to-do list. Users can read, create,
 - Node.js (>= 18.x)
 - npm (>= 9.x)
 
-## Setup
+## Setup (Development)
 
 ### Backend
 
@@ -30,6 +30,16 @@ This is a simple web application to manage a to-do list. Users can read, create,
    npm run dev
    ```
 
+4. API is available at the base url (http://localhost:4000)
+
+#### Note: Supposed the PostgreSQL is running at localhost:5432
+
+You may start the DB instance through docker compose (at the root directory of this repository)
+
+```bash
+docker compose up postgresdb
+```
+
 ### Frontend
 
 1. Navigate to the frontend directory:
@@ -48,6 +58,18 @@ This is a simple web application to manage a to-do list. Users can read, create,
    ```bash
    npm run dev
    ```
+
+4. Web UI is available at the base url (http://localhost:5173)
+
+#### Note: Supposed the backend is running at localhost:4000. 
+
+You may start the instance through docker compose (at the root directory of this repository)
+
+```bash
+docker compose up backend
+```
+
+Or running the development backend service (mentioned in previous section)
 
 ## Running Tests
 

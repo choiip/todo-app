@@ -37,6 +37,8 @@ services:
     env_file: ./.env
     ports:
       - $UI_PORT:80
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/conf.d/default.conf:ro
 
 volumes:
   db:
