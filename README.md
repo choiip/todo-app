@@ -88,3 +88,13 @@ Navigate to the frontend directory and run:
 ```bash
 npm test
 ```
+
+## Setup (Production)
+
+You may run the todo-app in a docker installed OS.
+
+```bash
+docker compose up -d
+```
+
+With the IP of the installed host, web UI is available at the url (http://< IP address of host >:4001)
