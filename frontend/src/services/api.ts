@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Duty } from "../types";
 
-const API_URL = "http://localhost:4000/api/duties";
+const API_URL = "/api/duties";
 
 export const fetchDuties = async (): Promise<Duty[]> => {
   const response = await axios.get(API_URL);
